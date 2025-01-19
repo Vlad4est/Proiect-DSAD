@@ -68,7 +68,7 @@ def plot_cluster_visualization(X_scaled, clusters):
 
 
 # Specificați calea către fișierul CSV
-file_path = '"HouseData.csv"'  # Înlocuiți cu calea reală către fișierul dvs.
+file_path = '"HouseData.csv"'
 
 # Executăm analiza
 X, X_scaled, data = load_and_prepare_data(file_path)
