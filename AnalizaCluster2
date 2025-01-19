@@ -1,7 +1,7 @@
 Analiza Pieței Imobiliare folosind Tehnici de Analiză Multivariată a Datelor
 1. Sursa de date
-Datele au fost colectate din platforma Zillow Real Estate, o sursă importantă de informații despre piața imobiliară din Statele Unite. Setul de date include proprietăți rezidențiale din zona metropolitană Seattle, Washington.
-Link: www.zillow.com/research/data/
+Proiectul nostru se bazează pe analiza datelor preluate de pe platforma Kaggle, din setul de date intitulat "Housing Price and Real Estate 2023" (autor: Reena Pinto). Acest set de date conține informații relevante despre prețurile locuințelor și alte detalii asociate pieței imobiliare, oferind o perspectivă actualizată asupra tendințelor din acest domeniu.
+Link: 
 2. Referință de timp privind datele
 Datele reprezintă listări imobiliare active în perioada Ianuarie 2024 - Martie 2024, oferind astfel o perspectivă actuală asupra pieței imobiliare din regiunea respectivă.
 3. Descrierea variabilelor
