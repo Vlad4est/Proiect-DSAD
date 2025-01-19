@@ -1,0 +1,73 @@
+Abordarea privind analiza datelor (PCA)
+Analiza Componentelor Principale (PCA) a fost aplicată pe un set de date imobiliare care conține următoarele variabile numerice: suprafața (Sq.Ft), numărul de dormitoare (Beds), numărul de băi (Bath) și prețul proprietății (Price). Datele au fost standardizate înainte de aplicarea PCA pentru a asigura că toate variabilele contribuie în mod egal la analiză, eliminând influența diferențelor de scală.
+Motivația pentru alegerea PCA
+PCA a fost aleasă ca metodă de analiză pentru următoarele motive:
+
+Reducerea dimensionalității: Setul de date conține multiple variabile corelate, iar PCA ne permite să identificăm structurile principale ale variației în date.
+Identificarea relațiilor: PCA ne ajută să înțelegem cum diferitele caracteristici ale proprietăților sunt interrelaționate și cum contribuie la variația totală în date.
+Vizualizare: Prin proiectarea datelor în spațiul componentelor principale, putem vizualiza mai ușor pattern-urile și structurile din date.
+
+Prezentarea și interpretarea rezultatelor
+1. Variația explicată de componentele principale:
+
+Prima componentă principală (PC1) explică 68.95% din variația totală
+A doua componentă (PC2) explică 16.26% din variație
+A treia componentă (PC3) explică 9.36% din variație
+A patra componentă (PC4) explică 5.44% din variație
+
+Cumulativ, primele două componente explică 85.20% din variația totală în date, ceea ce indică că putem reprezenta eficient datele noastre într-un spațiu bidimensional cu o pierdere minimă de informație.
+2. Analiza loadings-urilor (contribuțiilor variabilelor):
+Prima componentă principală (PC1):
+
+Are coeficienți pozitivi și relativ similari pentru toate variabilele (între 0.47 și 0.54)
+Poate fi interpretată ca un "indicator general al dimensiunii proprietății"
+Corelația cea mai puternică este cu numărul de băi (0.54)
+
+A doua componentă principală (PC2):
+
+Prezintă contrast între numărul de dormitoare (0.64) și preț (-0.60)
+Poate fi interpretată ca un "indicator al eficienței spațiului"
+Evidențiază proprietățile cu multe dormitoare dar preț mai mic vs. proprietăți cu puține dormitoare dar preț mai mare
+
+3. Interpretarea graficelor:
+
+Matricea de corelație:
+
+
+Prezintă corelațiile dintre toate variabilele originale
+Evidențiază relațiile puternice pozitive între suprafață, numărul de băi și preț
+Arată o corelație moderată între numărul de dormitoare și celelalte variabile
+
+
+Biplot:
+
+
+Prezintă simultan observațiile (punctele) și variabilele (săgețile)
+Direcția și lungimea săgeților indică contribuția variabilelor la componentele principale
+Arată că toate variabilele au contribuții pozitive la PC1 (toate săgețile sunt orientate spre dreapta)
+
+
+Graficul varianței cumulative:
+
+
+Demonstrează că primele două componente captează majoritatea variației din date
+Bara individuală arată contribuția fiecărei componente la variația totală
+Linia cumulativă arată cât din variația totală este explicată de componentele combinate
+
+
+Scatter plot PC1 vs PC2:
+
+
+Vizualizează distribuția proprietăților în spațiul primelor două componente principale
+Gradientul de culoare indică densitatea observațiilor
+Ajută la identificarea potențialelor clustere sau pattern-uri în date
+
+Concluzii (secțiunea PCA)
+Analiza componentelor principale a relevat că:
+
+Majoritatea variației în datele imobiliare poate fi explicată prin două dimensiuni principale (85.20%)
+Există o structură clară în date, cu prima componentă reprezentând dimensiunea generală a proprietății
+A doua componentă evidențiază un trade-off interesant între numărul de dormitoare și preț
+Analiza oferă o bază solidă pentru înțelegerea factorilor care influențează piața imobiliară și poate fi utilizată pentru predicții sau segmentare ulterioară
+
+Aceste rezultate pot fi valoroase pentru agenții imobiliari, dezvoltatori și cumpărători în înțelegerea relațiilor dintre diferitele caracteristici ale proprietăților și prețuri.
