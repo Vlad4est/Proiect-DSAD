@@ -1,0 +1,151 @@
+Analiza de Cluster pentru Piața Imobiliară
+Introducere
+Această analiză folosește metoda de clustering ierarhic pentru a înțelege mai bine segmentarea pieței imobiliare în funcție de caracteristicile proprietăților. Scopul este de a identifica grupuri naturale de proprietăți care împărtășesc caracteristici similare și de a înțelege ce face fiecare grup unic.
+Sursa de Date
+Datele analizate provin dintr-un set de date imobiliare care include următoarele informații pentru fiecare proprietate:
+
+Preț (Price)
+Număr de dormitoare (Beds)
+Număr de băi (Bath)
+Suprafață în picioare pătrate (Sq.Ft)
+
+Abordarea Analitică
+De ce Clustering Ierarhic?
+Am ales metoda de clustering ierarhic din următoarele motive:
+
+Oferă o vizualizare clară a modului în care proprietățile se grupează natural
+Nu necesită să specificăm numărul de clustere de la început
+Permite să vedem relațiile ierarhice între diferite grupuri de proprietăți
+Este o metodă potrivită pentru seturi de date de dimensiuni medii și mici
+
+Procesul de Analiză
+
+Pregătirea Datelor
+
+Am standardizat toate variabilele pentru a le aduce la aceeași scară
+Acest pas este crucial deoarece avem variabile cu unități foarte diferite (prețuri în sute de mii vs. număr de dormitoare)
+
+
+Crearea Dendrogramei
+
+Dendrograma este un "arbore" care arată cum se grupează proprietățile
+Cu cât două proprietăți sunt conectate mai jos în arbore, cu atât sunt mai similare
+Înălțimea conexiunilor indică cât de diferite sunt grupurile între ele
+
+
+Determinarea Numărului de Clustere
+
+Am ales să împărțim datele în 3 clustere principale
+Această decizie s-a bazat pe structura naturală vizibilă în dendrogramă
+Trei clustere oferă o segmentare clară și interpretabilă a pieței
+
+
+
+Interpretarea Rezultatelor
+Caracteristicile Clusterelor
+Clusterul 1: Proprietăți Premium
+
+Prețuri cele mai ridicate
+Suprafețe mari
+Număr mare de dormitoare și băi
+Reprezintă segmentul de lux al pieței
+Ideal pentru familii mari sau cumpărători care caută case spațioase
+
+Clusterul 2: Proprietăți Mid-Range
+
+Prețuri moderate
+Dimensiuni medii
+Balance bun între spațiu și preț
+Atractiv pentru familii tinere sau cumpărători la prima casă
+Oferă un raport bun calitate-preț
+
+Clusterul 3: Proprietăți Compacte
+
+Prețuri mai accesibile
+Suprafețe mai mici
+Număr redus de dormitoare și băi
+Perfect pentru single sau cupluri
+Reprezintă opțiunea cea mai accesibilă din piață
+
+Insights Cheie
+
+Segmentare Naturală
+
+Piața se împarte natural în trei segmente distincte
+Există diferențe clare între segmente în ceea ce privește prețul și dimensiunea
+Fiecare segment servește un tip diferit de cumpărător
+
+
+Corelații Importante
+
+Există o corelație puternică între preț și suprafață
+Numărul de băi și dormitoare tinde să crească împreună
+Proprietățile mai mari tind să aibă și mai multe facilități
+
+
+Outlieri și Cazuri Speciale
+
+Există câteva proprietăți care nu se încadrează perfect în niciun cluster
+Acestea pot reprezenta oportunități unice în piață
+Pot necesita strategii de marketing specifice
+
+
+
+Aplicații Practice
+
+Pentru Agenți Imobiliari
+
+Înțelegere mai bună a segmentelor de piață
+Capacitate îmbunătățită de a potrivi proprietățile cu cerințele clienților
+Strategii de pricing mai precise
+
+
+Pentru Cumpărători
+
+Înțelegere clară a opțiunilor disponibile în fiecare segment
+Așteptări realiste privind ce pot obține la diferite nivele de preț
+Decizii mai informate privind compromisurile preț-caracteristici
+
+
+Pentru Dezvoltatori
+
+Insight-uri pentru planificarea noilor dezvoltări
+Înțelegerea cererii pe diferite segmente
+Optimizarea mix-ului de proprietăți în proiecte
+
+
+
+Concluzii
+Analiza de cluster ne-a permis să:
+
+Identificăm structura naturală a pieței imobiliare
+Înțelegem mai bine relația dintre preț și caracteristici
+Segmentăm piața într-un mod util și acționabil
+
+Această segmentare poate fi folosită pentru:
+
+Strategii de marketing mai bine țintite
+Pricing mai precis
+Dezvoltare imobiliară mai eficientă
+Consultanță mai informată pentru cumpărători
+
+Limitări și Considerații
+
+Analiza se bazează doar pe caracteristici cantitative
+Nu ia în considerare factori precum locația sau starea proprietății
+Rezultatele pot varia în funcție de setul de date specific
+
+Recomandări
+
+Pentru Viitoare Analize
+
+Includerea mai multor variabile (ex: vârstă proprietate, locație)
+Analiza separată pe zone geografice
+Urmărirea schimbărilor în timp
+
+
+Pentru Utilizarea Rezultatelor
+
+Combinarea cu alte metode de analiză
+Validarea regulată a rezultatelor
+Adaptarea la condițiile locale specifice
