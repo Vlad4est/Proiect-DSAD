@@ -1,0 +1,136 @@
+Analiza Pieței Imobiliare folosind Tehnici de Analiză Multivariată a Datelor
+1. Sursa de date
+Datele au fost colectate din platforma Zillow Real Estate, o sursă importantă de informații despre piața imobiliară din Statele Unite. Setul de date include proprietăți rezidențiale din zona metropolitană Seattle, Washington.
+Link: www.zillow.com/research/data/
+2. Referință de timp privind datele
+Datele reprezintă listări imobiliare active în perioada Ianuarie 2024 - Martie 2024, oferind astfel o perspectivă actuală asupra pieței imobiliare din regiunea respectivă.
+3. Descrierea variabilelor
+Setul de date include următoarele variabile numerice:
+
+Price: Prețul proprietății în dolari americani (variabilă dependentă)
+Sq.Ft (Square Feet): Suprafața utilă a proprietății în picioare pătrate
+Beds: Numărul de dormitoare
+Bath: Numărul de băi
+
+Justificarea selecției variabilelor:
+
+Price: Reprezintă valoarea de piață și este indicatorul principal al valorii proprietății
+Sq.Ft: Factor crucial în evaluarea imobiliară, reprezentând dimensiunea fizică a spațiului locuibil
+Beds: Indicator important al capacității de cazare și potențialului de utilizare
+Bath: Reflectă nivelul de confort și modernitate al proprietății
+
+4. Descrierea observațiilor
+Setul de date conține 1000 de observații distincte, fiecare reprezentând o proprietate unică. Datele acoperă diverse tipuri de proprietăți rezidențiale, de la apartamente compacte până la case unifamiliale spațioase. Distribuția geografică este limitată la zona metropolitană Seattle pentru a asigura comparabilitatea prețurilor și caracteristicilor proprietăților.
+5. Abordarea privind analiza datelor
+Pentru acest studiu, am adoptat o abordare în două etape:
+
+Analiza preliminară:
+
+Verificarea și curățarea datelor
+Analiza statistică descriptivă
+Examinarea corelațiilor între variabile
+
+
+Analiza principală:
+
+Aplicarea Analizei Componentelor Principale (PCA)
+Standardizarea datelor pentru comparabilitate
+Analiza rezultatelor și interpretarea componentelor
+
+
+
+6. Motivația pentru alegerea metodei de analiză
+Am ales Analiza Componentelor Principale (PCA) pentru următoarele motive:
+
+Complexitatea pieței imobiliare:
+
+Multiple variabile interconectate
+Necesitatea identificării factorilor fundamentali care influențează prețurile
+
+
+Obiective analitice:
+
+Reducerea dimensionalității datelor
+Identificarea patternurilor ascunse
+Înțelegerea structurii relațiilor dintre variabile
+
+
+Avantaje metodologice:
+
+Capacitatea de a gestiona colinearitatea
+Oferă o perspectivă holistică asupra pieței
+Permite identificarea factorilor principali de variație
+
+
+
+7. Prezentarea rezultatelor
+7.1 Analiza componentelor principale
+Rezultatele PCA arată următoarea distribuție a varianței:
+
+PC1: 68.95% din varianța totală
+PC2: 16.26% din varianța totală
+PC3: 9.36% din varianța totală
+PC4: 5.44% din varianța totală
+
+7.2 Structura componentelor principale
+Prima componentă principală (PC1):
+
+Sq.Ft: 0.497
+Beds: 0.489
+Bath: 0.541
+Price: 0.472
+
+A doua componentă principală (PC2):
+
+Sq.Ft: -0.380
+Beds: 0.636
+Bath: 0.299
+Price: -0.602
+
+8. Interpretare
+8.1 Prima componentă principală - "Dimensiunea și calitatea generală"
+PC1 reprezintă un indicator general al mărimii și calității proprietății, explicând 68.95% din variația totală. Contribuțiile pozitive și echilibrate ale tuturor variabilelor sugerează că această componentă captează "valoarea intrinsecă" a proprietății.
+8.2 A doua componentă principală - "Eficiența spațiului"
+PC2 (16.26% din variație) evidențiază contrastul între numărul de dormitoare și preț, sugerând o dimensiune a eficienței utilizării spațiului și segmentării pieței.
+8.3 A treia componentă principală - "Raportul calitate-preț"
+PC3 (9.36% din variație) identifică proprietăți care deviază de la relația tipică preț-suprafață, evidențiind potențiale oportunități de investiții.
+8.4 A patra componentă principală - "Specificități structurale"
+PC4 (5.44% din variație) capturează variații în raportul băi-dormitoare, identificând proprietăți cu caracteristici atipice.
+9. Discuții și concluzii
+9.1 Implicații pentru piața imobiliară
+
+Structura pieței este dominată de factori generali de dimensiune și calitate
+Există segmente distincte de piață bazate pe eficiența utilizării spațiului
+Oportunitățile de investiții pot fi identificate prin analiza anomaliilor preț-caracteristici
+
+9.2 Recomandări practice
+Pentru investitori:
+
+Utilizarea scorurilor PC1 pentru evaluarea generală a proprietăților
+Analiza PC2 pentru identificarea proprietăților sub/supraevaluate
+Monitorizarea PC3 pentru oportunități de arbitraj
+
+Pentru dezvoltatori:
+
+Focalizarea pe optimizarea caracteristicilor care contribuie la PC1
+Adaptarea proiectelor la segmentele de piață identificate prin PC2
+Considerarea echilibrului facilităților evidențiat de PC4
+
+9.3 Limitări și direcții viitoare de cercetare
+
+Limitări:
+
+Set de date limitat geografic
+Număr redus de variabile analizate
+Perioada de timp relativ scurtă
+
+
+Direcții viitoare:
+
+Includerea mai multor variabile (vârstă, locație, condiție)
+Extinderea analizei la alte zone geografice
+Studierea evoluției temporale a componentelor
+
+
+
+Această analiză oferă o bază solidă pentru înțelegerea pieței imobiliare și poate fi utilizată pentru optimizarea deciziilor de investiții și dezvoltare imobiliară.
